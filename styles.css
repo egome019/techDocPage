@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
 	font-size: 19px;
+	margin: 0;
 }
 
 body {
@@ -19,16 +20,27 @@ header {
 nav {
 	display: flex;
 	flex-direction: column;
-	text-;
-	width: max-content;
-	margin: 0 1rem;
+	width: 100%;
 }
 
-nav a {
-	inline-size: max-content;
-	border-top: 2px solid #000;
-	/* border-bottom: 2px solid #000; */
+nav header {
+	border-bottom: 2px solid #000;
+	/* width: 25vw; */
+	overflow-x: auto;
+	margin: 1rem 0 0 0 !important;
 	padding: 1rem 0;
+	text-align: center;
+}
+
+.nav-link {
+	inline-size: max-content;
+	border-bottom: 2px solid #000;
+	width: 100%;
+	padding: 1rem 0;
+	text-indent: 1rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
 }
 
 p,
@@ -39,7 +51,9 @@ code {
 }
 
 #main-doc {
-	border-left: 1px solid #000;
+	border-left: 3px solid #000;
+	height: 100vh;
+	overflow: auto;
 }
 
 #main-doc section {
