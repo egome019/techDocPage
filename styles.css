@@ -25,22 +25,33 @@ nav {
 
 nav header {
 	border-bottom: 2px solid #000;
-	/* width: 25vw; */
 	overflow-x: auto;
 	margin: 1rem 0 0 0 !important;
 	padding: 1rem 0;
 	text-align: center;
 }
 
-.nav-link {
-	inline-size: max-content;
-	border-bottom: 2px solid #000;
+.nav-container {
+	list-style-type: none;
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
-	padding: 1rem 0;
-	text-indent: 1rem;
-	overflow-x: auto;
-	overflow-y: hidden;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.nav-container li {
+	border-bottom: 2px solid #000;
+	padding: 0 4em 1em 2em;
+	margin: -1px 1em 1em -1px;
+	width: 100%;
+}
+
+.nav-link {
 	white-space: nowrap;
+	text-decoration: none;
+	color: #000;
 }
 
 p,
@@ -53,9 +64,21 @@ code {
 #main-doc {
 	border-left: 3px solid #000;
 	height: 100vh;
-	overflow: auto;
 }
 
 #main-doc section {
 	margin: 1rem;
+}
+
+@media (max-width: 815.5px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav {
+		overflow: scroll;
+		border-top: #000 2px solid;
+		border-bottom: #000 2px solid;
+	}
 }
