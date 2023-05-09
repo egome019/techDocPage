@@ -20,13 +20,12 @@ header {
 nav {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	max-width: 100%;
 }
 
 nav header {
 	border-bottom: 2px solid #000;
-	overflow-x: auto;
-	margin: 1rem 0 0 0 !important;
+	margin: 0 !important;
 	padding: 1rem 0;
 	text-align: center;
 }
@@ -63,14 +62,14 @@ code {
 
 #main-doc {
 	border-left: 3px solid #000;
-	height: 100vh;
+	max-height: 200vh;
 }
 
 #main-doc section {
 	margin: 1rem;
 }
 
-@media (max-width: 815.5px) {
+@media (max-width: 1020.5px) {
 	body {
 		display: flex;
 		flex-direction: column;
