@@ -62,7 +62,7 @@ code {
 
 #main-doc {
 	border-left: 3px solid #000;
-	max-height: 200vh;
+	height: max-content;
 }
 
 #main-doc section {
