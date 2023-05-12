@@ -76,8 +76,13 @@ code {
 	}
 
 	nav {
-		overflow: scroll;
 		border-top: #000 2px solid;
 		border-bottom: #000 2px solid;
+	}
+
+	.nav-container {
+		overflow-y: scroll;
+		overflow-x: hidden;
+		height: 14rem;
 	}
 }
